@@ -3,7 +3,7 @@
 ```
 
 ```bash
-    yarn stary
+    yarn start
 ```
 
 将图片上传到cdn中需要修改webpack-cdn-plugin.js对应的排至文件
@@ -14,4 +14,4 @@
         password: '*******',///密码
         parallel: 5
     });
-``
+```

@@ -1,8 +1,6 @@
-
-
 const path = require('path')
 const webpack = require('webpack');
-
+const WebpackCdnPlugin = require('./webpack-cdn-plugin');
 
 const resolve = dir => {
   return path.join(__dirname, dir)
@@ -33,7 +31,8 @@ module.exports = {
     plugins: [
       new webpack.ProvidePlugin({
         moment:"moment",
-      })
+      }),
+      new WebpackCdnPlugin()
     ],
   },
 

@@ -14,8 +14,8 @@
                 <span></span>
             </div>
         </div>
-        <audio controls="controls" hidden id="fail">
-          <source src="./audio/fail.mp3" type="audio/mp3" />
+        <audio id="fail" autoplay="autoplay" controls="controls" loop="loop">
+          <source src="./audio/success.mp3" type="audio/mp3" />
         Your browser does not support this audio format.
         </audio>
         <audio controls="controls" hidden id="success">
@@ -53,11 +53,16 @@ import {Button} from 'vant'
       onPlayGoMp3(){
         let audio = document.getElementById('go'); //必须用原生js获取id，jquery无效
         // audio.currentTime = 0;
+        // audio.currentTime = 0;
         audio.play();
       }
      },
      mounted(){
-
+      let audio = document.getElementById("fail");
+        // debugger
+      document.addEventListener('touchstart', function(){ 
+          audio.play();
+      }, false);
      }
  }
 </script>

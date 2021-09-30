@@ -16,6 +16,11 @@ const routers = [
         path:'/reward',
         name: 'reward',
         component:()=>import('../view/reward/index'),
+    },
+    {
+        path:'/actityend',
+        name: 'actityend',
+        component:()=>import('../view/actity-end/index'),
     }
 ];
 export default routers

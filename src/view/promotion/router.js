@@ -20,7 +20,6 @@ partnerFiles.keys().forEach((key) => {
 })
 
 function getHttp(info, next){
-  debugger
   getActityInfo.forEach(item=>{
     if(item[info]){
       let startDate = moment(item[info].startTime,'YYYY-MM-DD HH:mm:ss');
@@ -42,7 +41,7 @@ function getHttp(info, next){
     }
   })
   next();
-};
+}
 
 router.beforeEach((to, from, next) => {
   ////判断活动是否过期

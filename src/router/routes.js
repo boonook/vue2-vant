@@ -2,7 +2,10 @@ const routers = [
     {
         path:'/',
         name: 'home',
-        component:()=>import('../view/home/home'),
+        component: () =>
+        import(
+            /* webpackChunkName: "home" */ '../view/home/home'
+        ),
         meta:{
             title:''
         }
@@ -10,17 +13,26 @@ const routers = [
     {
         path:'/home',
         name: 'home',
-        component:()=>import('../view/home/home'),
+        component: () =>
+        import(
+            /* webpackChunkName: "home" */ '../view/home/home'
+        ),
     },
     {
         path:'/reward',
         name: 'reward',
-        component:()=>import('../view/reward/index'),
+        component: () =>
+        import(
+            /* webpackChunkName: "reward" */ '../view/reward/index'
+        ),
     },
     {
         path:'/actityend',
         name: 'actityend',
-        component:()=>import('../view/actity-end/index'),
+        component: () =>
+        import(
+            /* webpackChunkName: "actityend" */ '../view/actity-end/index'
+        ),
     }
 ];
 export default routers

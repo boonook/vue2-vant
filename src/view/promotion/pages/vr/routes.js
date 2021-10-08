@@ -4,7 +4,7 @@ export default [
     name:'vrhome',
     component: () =>
       import(
-        /* webpackChunkName: "2021nationalday" */ './pages/home/index.vue'
+        /* webpackChunkName: "vr" */ './pages/home/index.vue'
       ),
     meta: { title: 'vr展示' },
   },

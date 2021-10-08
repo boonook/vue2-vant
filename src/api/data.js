@@ -1,4 +1,4 @@
-import axios from '../axios/axios_request'
+import axios from '@/libs/axios_request'
 export const homeData = (params) => {
   return axios.request({
     url:'/api/prizeuser/listAll',
